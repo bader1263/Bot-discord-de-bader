@@ -20,7 +20,7 @@ bot.on('message',message => {
     if (message.content === prefix +'help'){
         var help_embed = new Discord.RichEmbed()
         .setColor('#25E6B9')
-        .addField("Commande du bot!","   -.help : Affiche cette page (Génius !)")
+        .addField("Commande du bot!","   -.help : Affiche cette page (Génius !)","   -.invitation: Donne le lien d'invitation vers le discord bader comunity et le lien pour ajouter le bot )
         .addField("Interaction","ping: pong ahaha c'est tres drole.")
         .setFooter("Page de help")
         message.channel.sendEmbed(help_embed);
@@ -32,7 +32,7 @@ bot.on('message',message => {
         var invitation_embed = new Discord.RichEmbed()
         .setColor('#25E6B9')
         .addField("invitation du bot","   Lien du bot : https://discordapp.com/oauth2/authorize?client_id=432162437681381380&scope=bot&permissions=2146958591")
-        .addField("invitation du serveur bader comunity","Lien d'invitation: https://discord.gg/vMdyN")
+        .addField("invitation du serveur bader comunity","Lien d'invitation: https://discord.gg/Nm8SXgm")
         .setFooter("Page d'invitation")
         message.channel.sendEmbed(invitation_embed);
     //message.channel.sendMessage("Commande du bot:\n .help: Affiche cette page (Genius)\n ping:pong !");
