@@ -22,7 +22,7 @@ bot.on('message',message => {
         var help_embed = new Discord.RichEmbed()
         .setColor('#25E6B9')
         .addField("Commande du bot!","   -.help : Affiche cette page (Génius !)","   -.invitation: Donne le lien d'invitation vers le discord bader comunity et le lien pour ajouter le bot ")
-        .addField("Interaction","ping: pong ahaha c'est tres drole.","Bonjour: Le bot repond bonjour (ou pas)")
+        .addField("Interaction","ping: pong ahaha c'est tres drole.","Bonjour: Le bot repond bonjour ")
         .setFooter("Page de help")
         message.channel.sendEmbed(help_embed);
     console.log("La comande de help a été demander");
