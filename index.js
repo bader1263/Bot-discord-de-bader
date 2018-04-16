@@ -22,7 +22,7 @@ bot.on('message',message => {
         var help_embed = new Discord.RichEmbed()
        .setColor('#25E6B9')
        .addField("Commande du bot!","   -.help : Affiche cette page (Génius !)","   -.invitation: Donne le lien d'invitation vers le discord bader comunity et le lien pour ajouter le bot ")
-       .addField("Interaction","ping: pong ahaha c'est tres drole.","Bonjour: Le bot repond bonjour ")
+       .addField("Interaction","Ce sont des easter egg que vous devez les trouver")
        .setFooter("Page d'aide")
        message.channel.sendEmbed(help_embed);
    console.log("La comande d'invitation a été demander");
@@ -37,6 +37,8 @@ bot.on('message',message => {
     console.log("La comande d'invitation a été demander");
     }
     if (message.content === "Bonjour"){
+        random();
+
         if (randnum == 1){
             message.reply ("Bonjour , comment vas tu ?");
             console.log("Le bot a été poli");
@@ -52,6 +54,6 @@ bot.on('message',message => {
 });
 function random(min, max) {
     min = Math.cell(0);
-    max = Math.floor(3);
+    max = Math.floor(2);
    randnum = Math.floor(Math.random() * (max - min +1) + min);
 }
