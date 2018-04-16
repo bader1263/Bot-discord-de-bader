@@ -47,13 +47,17 @@ bot.on('message',message => {
 
         if (randnum == 2){
             message.reply("Aurevoire");
-            console.log("le bot n'a pas été poli !")
+            console.log("le bot n'a pas été poli !");
+        }
+        if (randnum == 3){
+            message.reply ("Bonjour");
+            console.log("Le bot a dis bonjour");
         }
 
     }
 });
 function random(min, max) {
     min = Math.cell(0);
-    max = Math.floor(2);
+    max = Math.floor(3);
    randnum = Math.floor(Math.random() * (max - min +1) + min);
 }
