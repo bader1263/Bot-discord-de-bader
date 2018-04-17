@@ -1,8 +1,7 @@
-<const Discord = require ('discord.js');
+const Discord = require ('discord.js');
 
 var bot = new Discord.Client();
 var prefix = ('.');
-var randnum = 0;
 
 bot.on('ready', () => {
     bot.user.setPresence({ game: {name: '.help Baderbot', type: 0}});
@@ -36,29 +35,4 @@ bot.on('message',message => {
         message.channel.sendEmbed(invitation_embed);
     console.log("La comande d'invitation a été demander");
     }
-    if (message.content === "Bonjour"){
-        random();
-
-        if (randnum == 1){
-            message.reply ("Bonjour , comment vas tu ?");
-            console.log("Le bot a été poli");
-            
-        }
-
-        if (randnum == 2){
-            message.reply("Aurevoire");
-            console.log("le bot n'a pas été poli !");
-        }
-        if (randnum == 3){
-            message.reply ("Bonjour");
-            console.log("Le bot a dis bonjour");
-        }
-
-    }
 });
-
-function random(min, max) {
-    min = Math.ceil(0);
-    max = Math.floor(3);
-   randnum = Math.floor(Math.random() * (max - min +1) + min);
-}
