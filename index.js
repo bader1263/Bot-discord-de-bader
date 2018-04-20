@@ -24,7 +24,7 @@ bot.on('message',message => {
        .addField("Interaction","Ce sont des easter egg que vous devez les trouver")
        .setFooter("Page d'aide")
        message.channel.sendEmbed(help_embed);
-   console.log("La comande d'invitation a été demander");
+   console.log("La comande d'aide a été demander");
     }
     if (message.content === prefix +'invitation'){
          var invitation_embed = new Discord.RichEmbed()
@@ -35,4 +35,6 @@ bot.on('message',message => {
         message.channel.sendEmbed(invitation_embed);
     console.log("La comande d'invitation a été demander");
     }
+
+    if (message.content === prefix +'')
 });
