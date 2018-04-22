@@ -17,7 +17,7 @@ bot.on('ready', () => {
     console.log("Le bot est pret !");
 });
 
-bot.login('NDMyMTYyNDM3NjgxMzgxMzgw.Dbu6Aw.MSg1Ve2plgtqOUkF5tNsMztvoiY');
+bot.login('process.env.TOKEN');
 
 bot.on("guildMemberAdd",member => {
     member.guild.channels.find("name","👥ʆღɨи-ҩµɨт👥").send(`Bienvenue ${member.user.username}, Passe un bon moment =)`)
