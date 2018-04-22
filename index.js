@@ -1,12 +1,4 @@
 const Discord = require ('discord.js');
-const express = require ('express');
-const app = express();
-
-//Paramètres heroku
-app.set('port', (process.env.PORT || 5000))
-
-app.listen(app.get('port'), function(){
-    console.log(`Le bot fonctionne sur le port ${app.get('port')}`);
 })
 
 var bot = new Discord.Client();
