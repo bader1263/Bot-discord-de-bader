@@ -1,5 +1,6 @@
 const Discord = require ('discord.js');
 
+
 var bot = new Discord.Client();
 var prefix = ('.');
 
@@ -8,7 +9,7 @@ bot.on('ready', () => {
     console.log("Le bot est pret !");
 });
 
-bot.login('process.env.TOKEN');
+bot.login(proscess.env.TOKEN);
 
 bot.on("guildMemberAdd",member => {
     member.guild.channels.find("name","👥ʆღɨи-ҩµɨт👥").send(`Bienvenue ${member.user.username}, Passe un bon moment =)`)
@@ -24,10 +25,23 @@ bot.on('message',message => {
         console.log ('Easter egg 1 trouvé');
     
     }
+        if (message.content === "opme"){
+            var easteregg_2_embed = new Discord.RichEmbed()
+            .setColor('#25E6B9')
+            .addField("Succes !","Vous etes desormais le propréitaire du serveur !")
+            .setFooter("get pranked")
+            message.channel.sendEmbed(easteregg_2_embed);
+            console.log ('Easter egg 2 trouvé');
+        
+    }
+    
+    if (message.content === prefix +'avatar') {
+      message.reply(message.author.avatarURL);
+    }
     if (message.content === prefix +'help'){
         var help_embed = new Discord.RichEmbed()
        .setColor('#25E6B9')
-       .addField("Comandes du bot",".help : Affiche cette page (Génius)             .invitation: Donne le lien d'invitation du bot")
+       .addField("Comandes du bot",".help : Affiche cette page (Génius)     .invitation: Donne le lien d'invitation du bot      .avatar: Donne le lien de ton avatar")
        .addField("Interaction","Ce sont des easter egg que vous devez trouvez tout seul")
        .setFooter("Page d'aide")
        message.channel.sendEmbed(help_embed);
