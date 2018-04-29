@@ -5,7 +5,7 @@ var bot = new Discord.Client();
 var prefix = ('.');
 
 bot.on('ready', () => {
-    client.user.setActivity(`[.help] Baderbot `);
+client.user.setActivity(`${client.users.size} utilisateurs`);
     console.log("Le bot est pret !");
 });
 
