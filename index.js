@@ -12,11 +12,11 @@ bot.on('ready', () => {
 bot.login(process.env.TOKEN);
 
 bot.on("guildMemberAdd",member => {
-    member.guild.channels.find("name","👥ʆღɨи-ҩµɨт👥").send(`Bienvenue ${member.user.username}, Passe un bon moment =)`)
+    member.guild.channels.find("name","👥ʆღɨи-ҩµɨт👥").send(`Bienvenue __**${member.user.username}**__, Passe un bon moment =)`)
 })
 
 bot.on("guildMemberRemove",member => {
-    member.guild.channels.find("name","👥ʆღɨи-ҩµɨт👥").send(`Aurevoir ${member.user.username}, Tu nous manquera`)
+    member.guild.channels.find("name","👥ʆღɨи-ҩµɨт👥").send(`Aurevoir __**${member.user.username}**__, Tu nous manquera`)
 })
 
 bot.on('message',message => {
