@@ -5,7 +5,7 @@ var bot = new Discord.Client();
 var prefix = ('.');
 
 bot.on('ready', () => {
-client.user.setActivity(`${client.users.size} utilisateurs`);
+    bot.user.setPresence({ game: {name: '[.help] Baderbot', type: 0}});
     console.log("Le bot est pret !");
 });
 
